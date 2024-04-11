@@ -8,7 +8,7 @@ const app = express()
 
 app.use(express.json())
 
-app.use(cors({withcredentials:true,origin:'https://mern-book-store-sand.vercel.app'}))
+app.use(cors({withcredentials:true,origin:['https://mern-book-store-sand.vercel.app']}))
 
 db()
 
