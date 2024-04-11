@@ -11,7 +11,7 @@ const DeleteBook = () => {
 
   const handleDelete = ()=>{
     setLoader(true)
-    axios.delete(`http://localhost:3000/books/${id}`)
+    axios.delete(`https://mern-book-store-sand.vercel.app/books/${id}`)
     .then(()=>{
       setLoader(false)
       navigate('/')
